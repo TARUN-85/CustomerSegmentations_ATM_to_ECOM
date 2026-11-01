@@ -1,0 +1,30 @@
+project:
+  name: atm-to-digital-customer-adoption
+  target_horizon_days: 30
+
+database:
+  host: "YOUR_MYSQL_HOST"
+  port: 3306
+  name: "YOUR_DATABASE_NAME"
+  username: "YOUR_MYSQL_USERNAME"
+  password: "YOUR_MYSQL_PASSWORD"
+
+campaign:
+  budget_inr: 500000
+  control_group_enabled: true
+
+transactions:
+  successful_status: SUCCESS
+  atm_channel: ATM
+  non_atm_channels:
+    - UPI
+    - POS
+    - ECOM
+    - MOBILE_APP
+    - NETBANKING
+
+model:
+  candidates:
+    - LogisticRegression
+    - RandomForest
+    - XGBoost

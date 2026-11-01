@@ -1,0 +1,25 @@
+# Python virtual environments and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local database credentials
+Config/config.yaml
+
+# Customer-level extracts and temporary export files
+Data/*.csv
+Data/*.csv.tmp
+!Data/ecom_debit_hyperparameter_results.csv
+!Data/ecom_debit_final_test_metrics.csv
+
+# Logs are local runtime output
+Logs/*.log
+!Logs/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

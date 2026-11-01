@@ -1,0 +1,32 @@
+{
+  "candidate_model": "LogisticRegression_C10",
+  "candidate_parameters": {
+    "C": 10.0
+  },
+  "selection_metric": "September validation PR-AUC (average precision)",
+  "features": [
+    "successful_txn_count_90d",
+    "debit_txn_count_90d",
+    "debit_txn_amount_90d",
+    "atm_debit_txn_count_90d",
+    "atm_debit_amount_90d",
+    "days_since_atm_debit",
+    "upi_debit_txn_count_90d",
+    "pos_debit_txn_count_90d",
+    "mobile_app_debit_txn_count_90d",
+    "netbanking_debit_txn_count_90d",
+    "ecom_non_debit_txn_count_90d",
+    "debit_purchase_txn_count_90d",
+    "debit_bill_payment_txn_count_90d",
+    "debit_cash_withdrawal_txn_count_90d",
+    "debit_transfer_txn_count_90d",
+    "debit_refund_txn_count_90d"
+  ],
+  "train_snapshots": "2026-04-01 through 2026-08-01",
+  "validation_snapshot": "2026-09-01",
+  "final_holdout_snapshot": "2026-10-01 (not evaluated during tuning)",
+  "train_rows": 9852,
+  "validation_rows": 2051,
+  "candidate_count_including_baseline": 18,
+  "random_state": 42
+}
